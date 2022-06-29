@@ -1,12 +1,12 @@
-import { useEffect, useState } from 'react';
-import Navbar from '../components/Navbar'
+// import Navbar from '../components/Navbar'
 import '../styles/globals.css'
-import {load} from '../src/func'
+import Navbar1 from '../components/Navbar1';
 
 function MyApp({ Component, pageProps }) {
 
   return <>
-  <Navbar  />
+  {/* <Navbar  /> */}
+  <Navbar1  />
   <Component  />
   </>
 }
