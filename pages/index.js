@@ -37,17 +37,16 @@ export default function Home() {
       <section className="text-gray-600 body-font">
         <div className="mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
           <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-            <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Before they sold out
-              <br className="hidden lg:inline-block"/>readymade gluten
+            <h1 className="title-font sm:text-4xl text-3xl mb-4 font-medium text-gray-900">Home for tech
+              <br className="hidden lg:inline-block"/>writers and readers
             </h1>
-            <p className="mb-8 leading-relaxed">Copper mug try-hard pitchfork pour-over freegan heirloom neutra air plant cold-pressed tacos poke beard tote bag. Heirloom echo park mlkshk tote bag selvage hot chicken authentic tumeric truffaut hexagon try-hard chambray.</p>
+            <p className="mb-8 leading-relaxed">The hassle-free blogging platform for engineers, thought-leaders, and the dev community!</p>
             <div className="flex justify-center">
-              <button className="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Button</button>
-              <button className="ml-4 inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">Button</button>
+              <button className="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">Get Started!</button>
             </div>
           </div>
           <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
-            <img className="object-cover object-center rounded" alt="hero" src="https://dummyimage.com/720x600"/>
+            <img className="object-cover object-center rounded" alt="hero" src="https://as1.ftcdn.net/v2/jpg/04/90/82/82/1000_F_490828293_7kp2EHjenwf4IKwKjPziH03nPTnJrn91.jpg"/>
           </div>
         </div>
       </section>
@@ -59,7 +58,6 @@ export default function Home() {
         {blogList.map((blog) => {
           return <div className="p-4 md:w-1/3" key={blog[1]}>
           <div className="h-full shadow-md border-gray-800 rounded-lg overflow-hidden">
-            <img className="lg:h-48 md:h-36 w-full object-cover object-center" src="https://dummyimage.com/720x400" alt="blog"/>
             <div className="p-6">
               <h2 className="tracking-widest text-xs title-font font-medium text-gray-500 mb-1">CATEGORY</h2>
               <h1 className="title-font text-lg font-medium text-black mb-3">{blog[1]}</h1>

@@ -38,13 +38,18 @@ const AddBlog = () => {
 
     <div className='w-full flex flex-col justify-center items-center'>
 
-    <div className="mb-4 w-6/12">
+    <div className="mb-4 mt-16 w-6/12">
         <input type="email" id="email" name="email" value={title} className="w-full bg-white   text-4xl font-bold outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" placeholder='Title' onChange={handleTitleChange} />
       </div>
       <br /><br />
       <div className="mb-4 w-6/12">
        
-        <textarea id="message" name="message" value={content} className="w-full bg-whitetext-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out" onChange={handleContentChange} placeholder="Start Writing Your Blog" ></textarea>
+        <textarea id="message" name="message" value={content} className="w-full bg-whitetext-base outline-none text-gray-700 py-1 px-3 resize-y leading-6 transition-colors duration-200 ease-in-out" onChange={handleContentChange} placeholder="Start Writing Your Blog" ></textarea>
+
+
+        {/* <span className="-full bg-whitetext-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out" role="textbox" contentEditable placeholder="Start Writing Your Blog" onChange={handleContentChange} value={content}> ps </span> */}
+
+
       </div>
       <br /><br /><br />
       <button className='bg-black text-white rounded px-5 py-2' onClick={handleSaveBlog} >Upload Blog</button>
